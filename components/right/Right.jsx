@@ -37,7 +37,7 @@ const Right = () => {
 
   return (
     <div className="p-4 w-1/4 min-w-60">
-      <h1 className="text-2xl font-bold mb-4">Latest</h1>
+      <h1 className="text-2xl font-bold mb-4 bg-gradient-to-r from-sky-900 h-68 to-indigo-800">Latest</h1>
       <ul className="space-y-4">
         {data.map((item, index) => (
           <li
