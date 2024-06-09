@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(220.55deg, #565656 0%, #181818 100%);
+  color: #dde4ff;
+  overflow-x: hidden;
+}
+.li {
+  position: relative;
+}
+.li:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 6px;
+  background-color: #ff0000;
+  transition: all 0.4s ease;
+}
+.li:hover::before {
+  width: 100%;
+}
+.left {
+  font-family: "Alata", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+::-webkit-scrollbar {
+  display: none;
+}
