@@ -36,8 +36,10 @@ const Left = () => {
   }
 
   return (
-    <div className="p-4 w-1/4 min-w-60">
-      <h1 className="text-2xl font-bold mb-4 bg-gradient-to-r from-sky-900 h-68 to-indigo-800">News Flash</h1>
+    <div className="p-4 md:w-1/4 w-screen min-w-60 border-r-0 md:border-r-[1px]">
+      <h1 className="text-2xl font-bold mb-4 bg-gradient-to-r from-sky-900 h-68 to-indigo-800">
+        News Flash
+      </h1>
       <ul className="space-y-4">
         {data.map((item, index) => (
           <li

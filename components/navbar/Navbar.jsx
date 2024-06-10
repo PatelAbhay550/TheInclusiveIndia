@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="left ">
         <Link href="/">The Inclusive India</Link>
       </div>
-      <div className="right ">
+      <div className="right hidden md:block ">
         <ul className="flex gap-8">
           <a href="#">
             <li className="li">India</li>

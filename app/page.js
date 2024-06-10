@@ -11,9 +11,8 @@ const page = () => {
     <>
       <Navbar />
       <Badge />
-      <div className="main flex mt-4 ">
-        <Left />
-        <Mid />
+      <div className="main flex mt-4 md:flex-row flex-col  ">
+        <Mid /> <Left />
         <Right />
       </div>
       <Footer />

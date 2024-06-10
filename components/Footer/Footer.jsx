@@ -13,7 +13,7 @@ const Footer = () => {
             <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
             <ul>
               <li>
-                <a href="/" className="hover:underline">
+                <a href="#home" className="hover:underline">
                   Home
                 </a>
               </li>

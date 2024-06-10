@@ -37,7 +37,7 @@ const Mid = () => {
   }
 
   return (
-    <div className="p-4 w-1/2 min-w-60 border-l-[1px] border-r-[1px]">
+    <div className="p-4 md:w-1/2 w-screen min-w-60 md:border-t-0 border-t-[1px]  border-r-0 md:border-r-[1px]">
       <h1 className="text-2xl font-bold mb-4">Headlines Today</h1>
       <ul className="space-y-4 border-b-[1px]">
         {data.map((item, index) => (
