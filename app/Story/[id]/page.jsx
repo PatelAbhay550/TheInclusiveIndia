@@ -84,6 +84,8 @@ const Page = (id) => {
         <p className="text-gray-200 text-xl cursor-default text-justify">
           {data.Content}
         </p>
+        <Left />
+        <Right />
       </div>
     </>
   );
