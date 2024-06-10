@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { MidData } from "@/api/MidData";
 import CustomMeta from "@/components/CustomMeta";
 import Navbar from "@/components/navbar/Navbar";
+import Left from "@/components/left/Left";
+import Right from "@/components/right/Right";
 
 // Define the Page component
 const Page = (id) => {
