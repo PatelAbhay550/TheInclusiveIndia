@@ -66,7 +66,7 @@ const Page = (id) => {
         <CustomMeta title={title} description={description} />
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-4xl font-bold cursor-default">{data.Headline}</h1>
-          <p className="text-gray-300 cursor-default">{data.Author}</p>
+          
         </div>
         <img
           src={data.Image}
@@ -82,6 +82,9 @@ const Page = (id) => {
               {tag}
             </span>
           ))}
+          <p className="text-gray-300 underline cursor-pointer">
+            Author: {data.Author}
+          </p>
         </div>
         <p className="text-gray-200 text-xl cursor-default text-justify">
           {data.Content}
