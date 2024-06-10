@@ -38,7 +38,14 @@ const Page = (id) => {
 
   // Render loading state if data is not available yet
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+      <div className="w-screen h-screen flex items-center justify-center ">
+        {" "}
+        <h2 className="animate-ping text-xl font-bold">
+          Getting Curated News From The Inclusive India...
+        </h2>
+      </div>
+    );
   }
   const title = data.Headline;
   const description = data.Content.substring(0, 150) + "..."; // Truncate content for description
@@ -74,7 +81,9 @@ const Page = (id) => {
             </span>
           ))}
         </div>
-        <p className="text-gray-200 text-xl cursor-default">{data.Content}</p>
+        <p className="text-gray-200 text-xl cursor-default text-justify">
+          {data.Content}
+        </p>
       </div>
     </>
   );
