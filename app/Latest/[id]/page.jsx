@@ -75,7 +75,7 @@ const Page = (id) => {
             </span>
           ))}
         </div>
-        <p className="text-gray-200 text-xl cursor-default">{data.Content}</p>
+        <p className="text-gray-200 text-xl cursor-default text-justify">{data.Content}</p>
       </div>
     </>
   );
