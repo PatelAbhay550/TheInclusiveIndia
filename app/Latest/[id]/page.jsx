@@ -5,6 +5,8 @@ import { LeftData } from "@/api/LeftData";
 import Head from "next/head";
 import CustomMeta from "@/components/CustomMeta";
 import Navbar from "@/components/navbar/Navbar";
+import Left from "@/components/left/Left";
+import Right from "@/components/right/Right";
 
 // Define the Page component
 const Page = (id) => {
@@ -80,6 +82,10 @@ const Page = (id) => {
         </div>
         <p className="text-gray-200 text-xl cursor-default text-justify">{data.Content}</p>
       </div>
+       <div className="more ml-[-15px]">
+          <Left />
+          <Right />
+        </div>
     </>
   );
 };
